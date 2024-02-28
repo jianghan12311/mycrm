@@ -67,6 +67,7 @@ public class IndexController extends BaseController {
     @RequestMapping("main")
     public String main(HttpServletRequest request){
 
+        int i;
         // 获取cookie中的用户Id
         Integer userId = LoginUserUtil.releaseUserIdFromCookie(request);
         // 查询用户对象，设置session作用域
