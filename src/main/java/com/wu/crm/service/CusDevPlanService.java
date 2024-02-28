@@ -70,6 +70,7 @@ public class CusDevPlanService extends BaseService<CusDevPlan, Integer> {
     @Transactional(propagation = Propagation.REQUIRED)
     public void addCusDevPlan(CusDevPlan cusDevPlan) {
         //参数校验
+        int i;
         checkCusDevPlanParams(cusDevPlan);
 
         //设置参数默认值
